@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Webseite</title>
+    <title>Reise-Webseite</title>
+    <link rel="stylesheet" href="css/base.css">  <!-- Globale Styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Individuelle Anpassungen -->
 </head>
-<body>
+
+<header>
+    <div class="header">
+      <img class="logo" src="xxx.jpeg"  alt="Logo" />
+      <h1>Travel</h1>
+    </div>
     
+    <!-- menu -->
+    <div>
+        <ul>
+            <li><a href="index.html">Startseite</a></li> 
+            <li><a href="ueber-uns.html">Über uns</a></li> 
+            <li><a href="inspiration.html">Inspiration</a></li> 
+            <li><a href="erfahrungen.html">Erfahrungen</a></li> 
+        </ul>
+    </div>
+</header>
+
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Travel</h1>
+        <p>Say yes to new adventures</p>
+    </header>
+
+    <!-- Über uns Section -->
+    <section class="about">
+        <h2>Über uns</h2>
+        <p>Reisen ist mehr als ein Ziel. Es ist die Art und Weise, wie wir die Welt erleben und Erinnerungen schaffen.</p>
+        <a href="ueber-uns.html" class="btn">Mehr erfahren</a>
+    </section>
+
+    <!-- Inspiration Section -->
+    <section class="inspiration">
+        <h2>Inspiration für deine nächste Reise</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/strand.jpg" alt="Strand">
+                <h3>Entspannende Strandurlaube</h3>
+            </div>
+            <div class="card">
+                <img src="images/berge.jpg" alt="Berge">
+                <h3>Abenteuer in den Bergen</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Erfahrungen Section -->
+    <section class="experiences">
+        <h2>Deine Erfahrungen zählen</h2>
+        <p>Teile deine Reisegeschichten mit uns und inspiriere andere.</p>
+        <a href="erfahrungen.html" class="btn">Erfahrungen teilen</a>
+    </section>
 </body>
+
+<footer>
+    <div class="footer-content">
+        <p>2025 Travel. Alle Rechte vorbehalten.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">YouTube</a>
+        </div>
+    </div>
+</footer>
+
 </html>
+
