@@ -8,8 +8,94 @@
     <link rel="stylesheet" href="css/style.css"> <!-- Individuelle Anpassungen -->
 </head>
 
-<body></body>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+            <li><a href="erfahrungen.html">Erfahrungen</a></li>
+        </ul>
+    </nav>
 
-<footer></footer>
+    <section class="inspiration-page">
+        <h2>Inspiration</h2>
+        <p>Entdecke die schönsten Orte der Welt und finde dein nächstes Reiseziel.</p>
 
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterSelection('all')">Alle</button>
+            <button class="filter-btn" onclick="filterSelection('deutschland')">Deutschland</button>
+            <button class="filter-btn" onclick="filterSelection('italien')">Italien</button>
+            <button class="filter-btn" onclick="filterSelection('spanien')">Spanien</button>
+            <button class="filter-btn" onclick="filterSelection('amerika')">Amerika</button>
+        </div>
+
+       <!-- Reiseziele -->
+       <div class="destination-container">
+        <div class="destination-card deutschland">
+            <img src="images/hamburg.jpg" alt="Hamburg">
+            <h3>Hamburg, Deutschland</h3>
+            <p><strong>Beste Reisezeit:</strong> Frühling bis Herbst</p>
+            <p>Die Hafenstadt besticht durch ihre beeindruckende Speicherstadt, die Elbphilharmonie und ein einzigartiges maritimes Flair.</p>
+        </div>
+        
+        <div class="destination-card spanien">
+            <img src="images/barcelona.jpg" alt="Barcelona">
+            <h3>Barcelona, Spanien</h3>
+            <p><strong>Beste Reisezeit:</strong> Frühling und Herbst</p>
+            <p>Barcelona verzaubert mit Gaudís Architektur, traumhaften Stränden und einer pulsierenden Atmosphäre.</p>
+        </div>
+        
+        <div class="destination-card spanien">
+            <img src="images/grancanaria.jpg" alt="Gran Canaria">
+            <h3>Gran Canaria, Spanien</h3>
+            <p><strong>Beste Reisezeit:</strong> Ganzjährig</p>
+            <p>Die Insel bietet beeindruckende Dünenlandschaften, traumhafte Strände und eine angenehme Temperatur das ganze Jahr über.</p>
+        </div>
+        
+        <div class="destination-card italien">
+            <img src="images/venedig.jpg" alt="Venedig">
+            <h3>Venedig, Italien</h3>
+            <p><strong>Beste Reisezeit:</strong> Frühling und Herbst</p>
+            <p>Die Stadt der Kanäle fasziniert mit ihrer historischen Architektur, romantischen Gondelfahrten und malerischen Gassen.</p>
+        </div>
+        
+        <div class="destination-card italien">
+            <img src="images/dolomiten.jpg" alt="Dolomiten">
+            <h3>Dolomiten, Italien</h3>
+            <p><strong>Beste Reisezeit:</strong> Sommer und Winter</p>
+            <p>Ein Paradies für Wanderer und Wintersportler, mit atemberaubenden Bergpanoramen und charmanten Almhütten.</p>
+        </div>
+        
+        <div class="destination-card amerika">
+            <img src="images/lasvegas.jpg" alt="Las Vegas">
+            <h3>Las Vegas, USA</h3>
+            <p><strong>Beste Reisezeit:</strong> Frühling und Herbst</p>
+            <p>Die schillernde Casinostadt bietet spektakuläre Shows, beeindruckende Hotels und ein pulsierendes Nachtleben.</p>
+        </div>
+        
+        <div class="destination-card amerika">
+            <img src="images/losangeles.jpg" alt="Los Angeles">
+            <h3>Los Angeles, USA</h3>
+            <p><strong>Beste Reisezeit:</strong> Frühling bis Herbst</p>
+            <p>Die Stadt der Stars lockt mit Hollywood, traumhaften Stränden und einer lebendigen Kulturszene.</p>
+        </div>
+        
+        <div class="destination-card deutschland">
+            <img src="images/muenchen.jpg" alt="München">
+            <h3>München, Deutschland</h3>
+            <p><strong>Beste Reisezeit:</strong> Frühling und Herbst</p>
+            <p>Die bayerische Metropole begeistert mit Biergärten, historischen Plätzen und dem berühmten Oktoberfest.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Folge uns: <a href="#">Instagram</a> | <a href="#">TikTok</a></p>
+        <p><a href="#">Impressum</a> | <a href="#">Datenschutzerklärung</a></p>
+    </footer>
+</body>
 </html>

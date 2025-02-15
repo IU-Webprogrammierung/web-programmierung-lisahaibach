@@ -8,35 +8,28 @@
     <link rel="stylesheet" href="css/style.css"> <!-- Individuelle Anpassungen -->
 </head>
 
-<header>
-    <div class="header">
-      <img class="logo" src="xxx.jpeg"  alt="Logo" />
-      <h1>Travel</h1>
-    </div>
-    
-    <!-- menu -->
-    <div>
-        <ul>
-            <li><a href="index.html">Startseite</a></li> 
-            <li><a href="ueber-uns.html">Über uns</a></li> 
-            <li><a href="inspiration.html">Inspiration</a></li> 
-            <li><a href="erfahrungen.html">Erfahrungen</a></li> 
-        </ul>
-    </div>
-</header>
-
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+            <li><a href="erfahrungen.html">Erfahrungen</a></li>
+        </ul>
+    </nav>
+
     <!-- Hero Section -->
     <header class="hero">
-        <h1>Travel</h1>
-        <p>Say yes to new adventures</p>
+        <img src="images/hero.jpg" alt="Hero Image">
+        <h1>Say yes to new adventures</h1>
     </header>
 
     <!-- Über uns Section -->
     <section class="about">
         <h2>Über uns</h2>
         <p>Reisen ist mehr als ein Ziel. Es ist die Art und Weise, wie wir die Welt erleben und Erinnerungen schaffen.</p>
-        <a href="ueber-uns.html" class="btn">Mehr erfahren</a>
+        <a href="ueber-uns.html" class="btn">Entdecken</a>
     </section>
 
     <!-- Inspiration Section -->
@@ -44,12 +37,14 @@
         <h2>Inspiration für deine nächste Reise</h2>
         <div class="cards">
             <div class="card">
-                <img src="images/strand.jpg" alt="Strand">
-                <h3>Entspannende Strandurlaube</h3>
+                <img src="images/strand.JPG" alt="Strandurlaub">
+                <h3>Entspannter Strandurlaub</h3>
+                <a href="inspiration.html" class="btn">Entdecken</a>
             </div>
             <div class="card">
-                <img src="images/berge.jpg" alt="Berge">
+                <img src="images/berge.JPG" alt="Bergurlaub">
                 <h3>Abenteuer in den Bergen</h3>
+                <a href="inspiration.html" class="btn">Entdecken</a>
             </div>
         </div>
     </section>
@@ -57,21 +52,14 @@
     <!-- Erfahrungen Section -->
     <section class="experiences">
         <h2>Deine Erfahrungen zählen</h2>
-        <p>Teile deine Reisegeschichten mit uns und inspiriere andere.</p>
+        <p>Teile deine Reisegeschichte mit uns und inspiriere andere.</p>
         <a href="erfahrungen.html" class="btn">Erfahrungen teilen</a>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Folge uns: <a href="#">Instagram</a> | <a href="#">TikTok</a></p>
+        <p><a href="#">Impressum</a> | <a href="#">Datenschutzerklärung</a></p>
+    </footer>
 </body>
-
-<footer>
-    <div class="footer-content">
-        <p>2025 Travel. Alle Rechte vorbehalten.</p>
-        <div class="social-links">
-            <a href="#">Instagram</a> |
-            <a href="#">Facebook</a> |
-            <a href="#">YouTube</a>
-        </div>
-    </div>
-</footer>
-
 </html>
-
