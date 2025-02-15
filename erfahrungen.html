@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reise-Webseite</title>
+    <link rel="stylesheet" href="css/base.css">  <!-- Globale Styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Individuelle Anpassungen -->
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+            <li><a href="erfahrungen.html">Erfahrungen</a></li>
+        </ul>
+    </nav>
+
+    <section class="experience-page">
+        <h2>Teile deine Erfahrungen</h2>
+        <p>Deine Reisegeschichte kann andere inspirieren! Teile dein schönstes Erlebnis mit uns.</p>
+
+        <!-- Formular für Erfahrungen -->
+        <form class="experience-form">
+            <label for="name">Dein Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="destination">Reiseziel:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="experience">Deine Erfahrung:</label>
+            <textarea id="experience" name="experience" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Erfahrung teilen</button>
+        </form>
+    </section>
+
+    <!-- Community Bereich -->
+    <section class="community-section">
+        <img src="images/sand.jpg" alt="background image">
+            <h2>Werde Teil unserer Community</h2>
+            <p>Folge uns auf Instagram und teile deine Erlebnisse mit #TravelErlebnis</p>
+            <a href="#" class="btn">Instagram</a>
+    </section> 
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Folge uns: <a href="#">Instagram</a> | <a href="#">TikTok</a></p>
+        <p><a href="#">Impressum</a> | <a href="#">Datenschutzerklärung</a></p>
+    </footer>
+</body>
+</html>
