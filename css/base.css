@@ -6,14 +6,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+  /*  background-color: #f4f4f4;*/
     color: #333;
     line-height: 1.6;
-}
-
-img {
-    max-width: 60%;
-    height: auto;
 }
 
 a {
@@ -36,21 +31,15 @@ h2 {
 
 /* Header Styling */
 .navbar {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f5e6cc; /* Beige Hintergrund für das Menü */
-    padding: 15px 30px;
+    padding: 30px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
     color: white;
-}
-
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
 }
 
 .nav-links {
@@ -73,4 +62,22 @@ h2 {
 
 .nav-links a:hover {
     color: #c29445;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #c29445;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: white;
 }
