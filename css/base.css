@@ -64,6 +64,22 @@ h2 {
     color: #c29445;
 }
 
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #c29445;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #a37936;
+}
+
 /* Footer */
 .footer {
     background-color: #222;
