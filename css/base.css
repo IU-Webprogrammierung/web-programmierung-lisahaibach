@@ -82,14 +82,14 @@ h2 {
 
 /* Footer */
 .footer {
-    background-color: #222;
+    background-color: #c29445;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 .footer a {
-    color: #c29445;
+    color: white;
     margin: 0 10px;
     transition: color 0.3s ease;
 }
