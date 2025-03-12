@@ -9,6 +9,7 @@ body {
   /*  background-color: #f4f4f4;*/
     color: #333;
     line-height: 1.6;
+    margin-top: 80px !important;
 }
 
 a {
@@ -81,8 +82,22 @@ h2 {
 }
 
 /* Footer */
+/* Erfahrungen Section */
 .experiences {
-    padding: 80px 0 80px 0 !important;
+    background: #f5e6cc;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 80px 0 80px 0;
+}
+
+.experiences h2 {
+    font-size: 2rem;
+}
+
+.experiences p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 .footer {
@@ -102,20 +117,3 @@ h2 {
     color: white;
 }
 
-/* Erfahrungen Section */
-.experiences {
-    background: #f5e6cc;
-    text-align: center;
-    padding: 40px;
-    margin-top: 40px;
-    border-radius: 10px;
-}
-
-.experiences h2 {
-    font-size: 2rem;
-}
-
-.experiences p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}

@@ -70,13 +70,7 @@
     transform: translateY(-10px);
 }
 
-/* Erfahrungen Section */
-.experiences {
-    background: #f5e6cc;
-}
-
-
-/* Responsives Design */
+/* responsive */
 @media (max-width: 768px) {
     .cards {
         flex-direction: column;

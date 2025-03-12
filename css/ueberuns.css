@@ -80,7 +80,7 @@ blockquote {
 }
 
 
-/* Responsives Design */
+/* responsive */
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;

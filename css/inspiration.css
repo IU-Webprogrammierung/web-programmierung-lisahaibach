@@ -66,13 +66,7 @@
     text-align: left;
 }
 
-/* Beste Reisezeit Styling */
-.destination-card p strong {
-    display: inline-block;
-    margin-right: 5px;
-}
-
-/* Responsiveness */
+/* responsive */
 @media (max-width: 768px) {
     h2 {
         font-size: 20px;
@@ -87,18 +81,4 @@
     .destination-card img {
         margin: 0 auto 10px auto;
     }
-}
-
-/* Erfahrungsbereich */
-.experience-section {
-    background-color: #eee;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.experience-section a {
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
 }
