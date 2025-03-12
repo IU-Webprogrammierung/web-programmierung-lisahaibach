@@ -81,6 +81,10 @@ h2 {
 }
 
 /* Footer */
+.experiences {
+    padding: 80px 0 80px 0 !important;
+}
+
 .footer {
     background-color: #c29445;
     color: white;
@@ -96,4 +100,22 @@ h2 {
 
 .footer a:hover {
     color: white;
+}
+
+/* Erfahrungen Section */
+.experiences {
+    background: #f5e6cc;
+    text-align: center;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.experiences h2 {
+    font-size: 2rem;
+}
+
+.experiences p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }

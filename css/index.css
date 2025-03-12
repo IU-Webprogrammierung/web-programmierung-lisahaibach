@@ -1,0 +1,94 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+/* Über uns Section */
+.about, .inspiration {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+  /*  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);*/
+}
+
+/* Inspiration: Boxen nebeneinander */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #eee;
+    padding: 20px;
+    border-radius: 8px;
+   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+    transition: transform 0.3s ease;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Erfahrungen Section */
+.experiences {
+    background: #f5e6cc;
+}
+
+
+/* Responsives Design */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+

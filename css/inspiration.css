@@ -1,0 +1,104 @@
+.inspiration-page {
+    margin-top: 120px;
+}
+
+/* Filteroptionen */
+.filter-buttons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Reiseziele */
+.destination-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.destination-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.destination-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: auto;
+    border-radius: 5px;
+}
+
+.destination-card h3 {
+    margin: 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.destination-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Beste Reisezeit Styling */
+.destination-card p strong {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 20px;
+    }
+    
+    .destination-card {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+    }
+    
+    .destination-card img {
+        margin: 0 auto 10px auto;
+    }
+}
+
+/* Erfahrungsbereich */
+.experience-section {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.experience-section a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
