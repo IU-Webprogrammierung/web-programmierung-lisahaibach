@@ -10,15 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
     loadComponent("footer", "footer.html");
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
-
-    menuToggle.addEventListener("click", function () {
-        navLinks.classList.toggle("active");
-    });
-});
-
 //Filter Länder Seite Inspiration
 document.addEventListener("DOMContentLoaded", function () {
     // Alle Filter-Buttons holen
@@ -53,3 +44,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Burger-Menü Funktion nach Laden des Headers initialisieren
+function initBurgerMenu() {
+    const menuToggle = document.getElementById("mobile-menu");
+    const navLinks = document.querySelector(".nav-links");
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+            menuToggle.classList.toggle("active");
+        });
+    } else {
+        console.error("Burger-Menü Elemente nicht gefunden");
+    }
+}

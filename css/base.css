@@ -67,14 +67,16 @@ h2 {
 
 /* Menü-Umschalter (Burger-Button) */
 .menu-toggle {
-    display: none;
+    display: none; /* Standardmäßig versteckt */
     flex-direction: column;
     cursor: pointer;
     position: absolute;
     right: 20px;
     top: 25px;
+    z-index: 1100; /* Stellt sicher, dass der Button über anderen Elementen liegt */
 }
 
+/* Linien für den Burger-Button */
 .menu-toggle .bar {
     background-color: black;
     height: 3px;
@@ -95,8 +97,9 @@ h2 {
         background-color: #f5e6cc;
         padding: 20px 0;
         text-align: center;
+        z-index: 1000; /* Stellt sicher, dass das Menü über anderen Elementen liegt */
     }
-
+    
     .nav-links.active {
         display: flex;
     }
@@ -106,7 +109,7 @@ h2 {
     }
 
     .menu-toggle {
-        display: flex;
+        display: flex; /* Hier sicherstellen, dass der Button sichtbar ist */
     }
 }
 
