@@ -6,10 +6,9 @@
 
 body {
     font-family: Arial, sans-serif;
-  /*  background-color: #f4f4f4;*/
     color: #333;
     line-height: 1.6;
-    margin-top: 80px !important;
+    margin-top: 80px;
 }
 
 a {
@@ -32,17 +31,23 @@ h2 {
 
 /* Header Styling */
 .navbar {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f5e6cc; /* Beige Hintergrund für das Menü */
-    padding: 30px;
+    background-color: #f5e6cc;
+    padding: 20px 30px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    color: white;
 }
 
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Navigation */
 .nav-links {
     display: flex;
     gap: 40px;
@@ -67,16 +72,13 @@ h2 {
 
 /* Menü-Umschalter (Burger-Button) */
 .menu-toggle {
-    display: none; /* Standardmäßig versteckt */
+    display: none;
     flex-direction: column;
     cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 25px;
-    z-index: 1100; /* Stellt sicher, dass der Button über anderen Elementen liegt */
+    position: relative;
 }
 
-/* Linien für den Burger-Button */
+/* Burger-Icon */
 .menu-toggle .bar {
     background-color: black;
     height: 3px;
@@ -97,7 +99,7 @@ h2 {
         background-color: #f5e6cc;
         padding: 20px 0;
         text-align: center;
-        z-index: 1000; /* Stellt sicher, dass das Menü über anderen Elementen liegt */
+        z-index: 1000;
     }
     
     .nav-links.active {
@@ -109,11 +111,11 @@ h2 {
     }
 
     .menu-toggle {
-        display: flex; /* Hier sicherstellen, dass der Button sichtbar ist */
+        display: flex;
     }
 }
 
-/* Burger-Animation für X-Symbol */
+/* Burger-Menü Animation */
 .menu-toggle.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
@@ -126,7 +128,7 @@ h2 {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Buttons */
+/* Button */
 .btn {
     display: inline-block;
     background-color: #c29445;
@@ -135,30 +137,19 @@ h2 {
     border-radius: 5px;
     transition: background 0.3s ease;
     text-align: center;
-    margin-top: 10px;
 }
 
 .btn:hover {
     background-color: #a37936;
 }
 
-/* Footer */
 /* Erfahrungen Section */
 .experiences {
     background: #f5e6cc;
     text-align: center;
     margin-top: 40px;
     border-radius: 10px;
-    padding: 80px 0 80px 0;
-}
-
-.experiences h2 {
-    font-size: 2rem;
-}
-
-.experiences p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
+    padding: 80px 0;
 }
 
 .footer {
@@ -177,4 +168,3 @@ h2 {
 .footer a:hover {
     color: white;
 }
-

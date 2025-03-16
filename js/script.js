@@ -1,18 +1,32 @@
-// Header & Footer einfügen
-function loadComponent(id, file) {
+// Header & Footer einfügen mit Callback-Funktion
+function loadComponent(id, file, callback) {
     fetch(file)
-    .then(response => response.text())
-    .then(data => document.getElementById(id).innerHTML = data);
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(id).innerHTML = data;
+            if (callback) callback(); // Führe Callback nach Laden aus
+        });
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    loadComponent("header", "header.html");
+    loadComponent("header", "header.html", function () {
+        // Burger-Menü Funktion initialisieren, nachdem der Header geladen wurde
+        const menuToggle = document.getElementById("mobile-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuToggle.classList.toggle("active");
+            });
+        }
+    });
+
     loadComponent("footer", "footer.html");
 });
 
-//Filter Länder Seite Inspiration
+// Filter-Funktion für die Inspirationsseite
 document.addEventListener("DOMContentLoaded", function () {
-    // Alle Filter-Buttons holen
     const filterButtons = document.querySelectorAll(".filter-btn");
 
     filterButtons.forEach(button => {
@@ -30,10 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             destinations.forEach(destination => {
                 if (filterValue === "all") {
-                    // Zeige alle Reiseziele, wenn "Alle" ausgewählt ist
                     destination.style.display = "flex";
                 } else {
-                    // Prüfe, ob das Ziel die gesuchte Klasse enthält
                     if (destination.classList.contains(filterValue)) {
                         destination.style.display = "flex";
                     } else {
@@ -44,18 +56,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-// Burger-Menü Funktion nach Laden des Headers initialisieren
-function initBurgerMenu() {
-    const menuToggle = document.getElementById("mobile-menu");
-    const navLinks = document.querySelector(".nav-links");
-
-    if (menuToggle && navLinks) {
-        menuToggle.addEventListener("click", function () {
-            navLinks.classList.toggle("active");
-            menuToggle.classList.toggle("active");
-        });
-    } else {
-        console.error("Burger-Menü Elemente nicht gefunden");
-    }
-}
