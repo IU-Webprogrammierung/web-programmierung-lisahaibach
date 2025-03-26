@@ -27,30 +27,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Filter-Funktion für die Inspirationsseite
 document.addEventListener("DOMContentLoaded", function () {
-    const filterButtons = document.querySelectorAll(".filter-btn");
+    const buttons = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".destination-card");
 
-    filterButtons.forEach(button => {
-        button.addEventListener("click", function () {
-            let filterValue = this.getAttribute("onclick").split("'")[1];
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const filter = button.getAttribute("data-filter");
 
-            // Entferne die aktive Klasse von allen Buttons
-            filterButtons.forEach(btn => btn.classList.remove("active"));
+            // Aktiven Button markieren
+            buttons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
 
-            // Füge die aktive Klasse zum aktuellen Button hinzu
-            this.classList.add("active");
-
-            // Alle Destination-Cards holen
-            const destinations = document.querySelectorAll(".destination-card");
-
-            destinations.forEach(destination => {
-                if (filterValue === "all") {
-                    destination.style.display = "flex";
+            // Karten filtern
+            cards.forEach(card => {
+                if (filter === "all" || card.classList.contains(filter)) {
+                    card.style.display = "block";
                 } else {
-                    if (destination.classList.contains(filterValue)) {
-                        destination.style.display = "flex";
-                    } else {
-                        destination.style.display = "none";
-                    }
+                    card.style.display = "none";
                 }
             });
         });
