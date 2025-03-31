@@ -117,7 +117,7 @@ h2 {
 
 /* Burger-Menü Animation */
 .menu-toggle.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(18px) rotate(45deg);
 }
 
 .menu-toggle.active .bar:nth-child(2) {
