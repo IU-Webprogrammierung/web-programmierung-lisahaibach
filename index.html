@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,64 +10,90 @@
 </head>
 
 <body>
-    <header id="navbar" class="bg-gray-50 fixed w-full top-0 left-0 z-50">
-        <nav class="container flex items-center justify-between h-16 sm:h-20">
-            <div class="font-Lobster">
-                <img src="/images/logo.png" class="mr-3 h-6 sm:h-9" alt="Travel Logo" />
-            </div>
+    <!-- Navigation -->
+    <div id="header"></div>
 
-            <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
-                <ul class="flex flex-col items-center gap-8 lg:flex-row">
-                    <li>
-                        <a href="ueber-uns.html" class="nav-link">Über uns</a>
-                    </li>
+    <!--Hero-->
+    <section id="home" class="relative">
+        <div class="container">
+            <div class="flex flex-col items-center gap-5 lg:flex-row">
+                <!-- content -->
+                <div class="home__data w-full space-y-5 lg:w-1/2">
+                    <h1>
+                        <span class="text-yellow-500">Say yes</span> to new <br> 
+                        <span class="text-yellow-500">adventures</span><br>
+                    </h1>
+                </div>
 
-                    <li>
-                        <a href="inspiration.html" class="nav-link">Inspiration</a>
-                    </li>
-
-                    <li>
-                        <a href="erfahrungen.html" class="nav-link">Erfahrungen</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
-                <i class="ri-menu-4-line" id="hamburger"></i>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <!--Hero-->
-        <section id="home" class="relative">
-            <div class="container">
-                <div class="flex flex-col items-center gap-5 lg:flex-row">
-                    <!-- content -->
-                    <div class="home__data w-full space-y-5 lg:w-1/2">
-                        <h1>
-                            <span class="text-yellow-500">Say yes</span> to new <br> 
-                            <span class="text-yellow-500">adventures</span><br>
-                        </h1>
-
-                        <div class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10">
-                            <button class="btn">
-                                <span>Inspiration</span>
-                            </button>
-
-                            <button class="btn btn_outline">
-                                <span>Erfahrungen teilen</span>                              
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="w-full relative lg:w-1/2">
-                        <img src="/images/hero.jpg" alt="home_image" class="home__image">
-                    </div>
+                <div class="w-full relative lg:w-1/2">
+                    <img src="/images/hero.jpg" alt="home_image" class="home__image">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-</main>
+    <section class="text-center">
+        <h2 class="text-2xl font-semibold mb-4">Willkommen auf unserer Reise-Webseite</h2>
+        <p class="mb-6">Reisen ist mehr als ein Ziel. Es ist die Art und Weise, wie wir die Welt erleben und Erinnerungen schaffen.</p>
+        <button class="bg-sky-500 hover:bg-sky-700 ">Entdecken</button>
+    </section>
+
+     <!--Inspiration-->
+     <div class="bg-white text-grey-900 py-20">
+        <div class="container w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <!-- card 1 -->
+             <div class="service__card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                <div class="flex items-center gap-5">
+                    <i><img src="/images/losangeles.jpg" alt="Los Angeles"></i>
+                    <p class="md:text-lg font-bold">
+                        Amerika                            
+                    </p>                        
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, facere debitis omnis                        
+                </p>
+             </div>
+
+             <!-- card 2 -->
+             <div class="service__card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                <div class="flex items-center gap-5">
+                    <i><img src="/images/grancanaria.jpg" alt="Gran Canaria"></i>
+                    <p class="md:text-lg font-bold">
+                        Spanien                        
+                    </p>                        
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, facere debitis omnis                        
+                </p>
+             </div>
+
+              <!-- card 3 -->
+              <div class="service__card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                <div class="flex items-center gap-5">
+                    <i><img src="/images/venedig.jpg" alt="Venedig"></i>
+                    <p class="md:text-lg font-bold">
+                        Italien                      
+                    </p>                        
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, facere debitis omnis                        
+                </p>
+             </div>
+
+             <!-- card 4 -->
+             <div class="service__card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                <div class="flex items-center gap-5">
+                    <i><img src="/images/hamburg.jpg" alt="Hamburg"></i>
+                    <p>
+                        Deutschland                       
+                    </p>                        
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, facere debitis omnis                        
+                </p>
+             </div>
+        </div>
+    </div>
+
 </body>
 </html>

@@ -1,20 +1,27 @@
-<header class="navbar">
-    <div class="logo">
-        <a href="index.html">
-            <img src="images/logo.png" alt="Logo">
-        </a>
-    </div>
-    
-    <div class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
+<header id="navbar" class="bg-gray-50 fixed w-full top-0 left-0 z-50">
+    <nav class="container flex items-center justify-between h-16 sm:h-20">
+        <div class="font-Lobster">
+            <img src="/images/logo.png" class="mr-3 h-6 sm:h-9" alt="Travel Logo" />
+        </div>
 
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="ueber-uns.html">Über uns</a></li>
-        <li><a href="inspiration.html">Inspiration</a></li>
-        <li><a href="erfahrungen.html">Erfahrungen</a></li>
-    </ul>
+        <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+            <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                <li>
+                    <a href="ueber-uns.html" class="nav-link">Über uns</a>
+                </li>
+
+                <li>
+                    <a href="inspiration.html" class="nav-link">Inspiration</a>
+                </li>
+
+                <li>
+                    <a href="erfahrungen.html" class="nav-link">Erfahrungen</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+            <i class="ri-menu-4-line" id="hamburger"></i>
+        </div>
+    </nav>
 </header>
