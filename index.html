@@ -5,46 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reise-Webseite</title>
     <link rel="stylesheet" href="css/base.css">  <!-- Globale Styles -->
-    <link rel="stylesheet" href="css/index.css"> <!-- Individuelle Anpassungen -->
     <script src="js/script.js"></script>  <!-- JavaScript Datei einbinden -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> <!-- Tailwind css -->
 </head>
 
 <body>
-    <!-- Navigation -->
-    <div id="header"></div>
+    <header id="navbar" class="bg-gray-50 fixed w-full top-0 left-0 z-50">
+        <nav class="container flex items-center justify-between h-16 sm:h-20">
+            <div class="font-Lobster">
+                <img src="/images/logo.png" class="mr-3 h-6 sm:h-9" alt="Travel Logo" />
+            </div>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <img src="images/hero.jpg" alt="Hero Image">
-        <h1>Say yes to new adventures</h1>
+            <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                    <li>
+                        <a href="ueber-uns.html" class="nav-link">Über uns</a>
+                    </li>
+
+                    <li>
+                        <a href="inspiration.html" class="nav-link">Inspiration</a>
+                    </li>
+
+                    <li>
+                        <a href="erfahrungen.html" class="nav-link">Erfahrungen</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+        </nav>
     </header>
 
-    <!-- Über uns Section -->
-    <section class="about">
-        <h2>Über uns</h2>
-        <p>Reisen ist mehr als ein Ziel. Es ist die Art und Weise, wie wir die Welt erleben und Erinnerungen schaffen.</p>
-        <a href="ueber-uns.html" class="btn">Entdecken</a>
-    </section>
+    <main>
+        <!--Hero-->
+        <section id="home" class="relative">
+            <div class="container">
+                <div class="flex flex-col items-center gap-5 lg:flex-row">
+                    <!-- content -->
+                    <div class="home__data w-full space-y-5 lg:w-1/2">
+                        <h1>
+                            <span class="text-yellow-500">Say yes</span> to new <br> 
+                            <span class="text-yellow-500">adventures</span><br>
+                        </h1>
 
-    <!-- Inspiration Section -->
-    <section class="inspiration">
-        <h2>Inspiration für deine nächste Reise</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="images/losangeles.JPG" alt="Los Angeles">
-                <h3>Amerika</h3>
-                <a href="inspiration.html" class="btn">Entdecken</a>
-            </div>
-            <div class="card">
-                <img src="images/barcelona.JPG" alt="Barcelona">
-                <h3>Spanien</h3>
-                <a href="inspiration.html" class="btn">Entdecken</a>
-            </div>
-        </div>
-    </section>
+                        <div class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10">
+                            <button class="btn">
+                                <span>Inspiration</span>
+                            </button>
 
-    <!-- Footer -->
-    <div id="footer"></div>
+                            <button class="btn btn_outline">
+                                <span>Erfahrungen teilen</span>                              
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="w-full relative lg:w-1/2">
+                        <img src="/images/hero.jpg" alt="home_image" class="home__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+</main>
 </body>
 </html>
