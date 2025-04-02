@@ -1,51 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reise-Webseite</title>
-    <link rel="stylesheet" href="css/base.css">  <!-- Globale Styles -->
-    <link rel="stylesheet" href="css/ueberuns.css"> <!-- Individuelle Anpassungen -->
-    <script src="js/script.js"></script>  <!-- JavaScript Datei einbinden -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> <!-- Tailwind css -->
-</head>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reise-Webseite</title>
+        <link rel="stylesheet" href="css/base.css">  <!-- Globale Styles -->
+        <script src="js/script.js"></script>  <!-- JavaScript Datei einbinden -->
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    </head>
 
-<body>
-    <!-- Navigation -->
-    <div id="header"></div>
-
-    <section class="about-page">
-        <div class="about-content">
-            <div class="about-text">
-                <h2>ÜBER UNS</h2>
+    <body class="pt-20">
+        <!-- Header -->
+        <div id="header"></div>
+    
+        <section class="bg-white py-16">
+            <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+              
+              <!-- Text -->
+              <div class="lg:w-1/2 space-y-6">
+                <h2 class="text-3xl font-bold uppercase text-[#3d3d3d]">Über uns</h2>
                 <p>Wir sind Lisa und Levi, ein Paar aus Österreich, das die schönsten Orte der Welt entdeckt und seine Erfahrungen teilt.</p>
                 <p>Unsere Mission ist es, euch zu inspirieren und unsere Erlebnisse mit euch zu teilen.</p>
                 
-                <div class="stats">
-                    <div class="stat">
-                        <h3>25+</h3>
-                        <p>Bereiste Länder</p>
-                    </div>
-                    <div class="stat">
-                        <h3>200.000+</h3>
-                        <p>Geflogene Kilometer</p>
-                    </div>
-                    <div class="stat">
-                        <h3>100+</h3>
-                        <p>Besuchte Städte</p>
-                    </div>
+                <!-- Stats -->
+                <div class="flex flex-wrap gap-8 mt-6">
+                  <div class="text-center">
+                    <h3 class="text-2xl font-bold text-[#d4a12a]">25+</h3>
+                    <p class="text-sm">Bereiste Länder</p>
+                  </div>
+                  <div class="text-center">
+                    <h3 class="text-2xl font-bold text-[#d4a12a]">200.000+</h3>
+                    <p class="text-sm">Geflogene Kilometer</p>
+                  </div>
+                  <div class="text-center">
+                    <h3 class="text-2xl font-bold text-[#d4a12a]">100+</h3>
+                    <p class="text-sm">Besuchte Städte</p>
+                  </div>
                 </div>
-                
-                <blockquote>„Reisen ist mehr als ein Ziel, es ist eine Lebenseinstellung“</blockquote>
-                <p class="quote-author">- Lisa Haibach</p>
+          
+                <!-- Quote -->
+                <div class="mt-8">
+                  <blockquote class="italic text-lg text-gray-700">„Reisen ist mehr als ein Ziel, es ist eine Lebenseinstellung“</blockquote>
+                  <p class="text-[#d4a12a] font-semibold mt-1">– Lisa Haibach</p>
+                </div>
+              </div>
+          
+              <!-- Bild -->
+              <div class="lg:w-1/2 flex justify-center">
+                <img src="images/ueberuns.jpg" alt="Lisa und Levi auf Reisen" class="rounded-lg shadow-lg max-w-xs w-full object-cover">
+              </div>
+          
             </div>
-            <div class="about-image">
-                <img src="images/ueberuns.jpg" alt="Lisa und Levi auf Reisen">
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <div id="footer"></div>
-</body>
+          </section>
+ 
+    
+        <!-- Footer -->
+        <div id="footer"></div>
+    </body>
 </html>
