@@ -24,3 +24,28 @@ function loadComponent(id, file, callback) {
     // Footer laden
     loadComponent("footer", "footer.html");
   });
+
+  // Filter-Funktion für die Inspirationsseite
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".destination-card");
+
+  buttons.forEach(button => {
+      button.addEventListener("click", () => {
+          const filter = button.getAttribute("data-filter");
+
+          // Aktiven Button markieren
+          buttons.forEach(btn => btn.classList.remove("active"));
+          button.classList.add("active");
+
+          // Karten filtern
+          cards.forEach(card => {
+              if (filter === "all" || card.classList.contains(filter)) {
+                  card.style.display = "block";
+              } else {
+                  card.style.display = "none";
+              }
+          });
+      });
+  });
+});

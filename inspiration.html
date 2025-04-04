@@ -18,152 +18,104 @@
             <p class="mb-6">Entdecke die schönsten Orte der Welt und finde dein nächstes Reiseziel.</p>
         </section>
 
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap justify-center gap-4 my-10">
+            <button class="filter-btn active px-4 py-2 bg-white-500 text-black rounded hover:bg-[#5c4033]" data-filter="all">Alle</button>
+            <button class="filter-btn px-4 py-2 bg-white-500 text-black rounded hover:bg-[#5c4033]" data-filter="deutschland">Deutschland</button>
+            <button class="filter-btn px-4 py-2 bg-white-500 text-black rounded hover:bg-[#5c4033]" data-filter="spanien">Spanien</button>
+            <button class="filter-btn px-4 py-2 bg-white-500 text-black rounded hover:bg-[#5c4033]" data-filter="italien">Italien</button>
+            <button class="filter-btn px-4 py-2 bg-white-500 text-black rounded hover:bg-[#5c4033]" data-filter="amerika">Amerika</button>
+        </div>
+
         <section id="inspiration" class="relative overflow-hidden">
             <div class="container space-y-10 xl:space-y-0">
                 <!-- item 1 -->
-                <div class="flex flex-col items-center lg:flex-row gap-5">
-                    <!-- image -->
-                    <div class="about__item__1-img w-full lg:w-1/2">
+                <div class="destination-card deutschland flex flex-col items-center lg:flex-row gap-5">
+                    <div class="w-full lg:w-1/2">
                         <img src="/images/hamburg.jpg" alt="Hamburg" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
                     </div>
-
-                    <!-- content -->
-                    <div class="about__item__1-content w-full lg:w-1/2">
+                    <div class="w-full lg:w-1/2">
                         <div class="space-y-5">
-                            <h3>
-                                <span class="text-yellow-500">Hamburg</span>  <br>
-                                Beste Reisezeit: Frühling bis Herbst                             
-                            </h3>
-                            <p class="text-slate-300">
-                                Die Hafenstadt besticht durch ihre beeindruckende Speicherstadt, die Elbphilharmonie und ein einzigartiges maritimes Flair.
-                            </p>
+                            <h3><span class="text-yellow-500">Hamburg</span><br>Beste Reisezeit: Frühling bis Herbst</h3>
+                            <p class="text-slate-300">Die Hafenstadt besticht durch ihre beeindruckende Speicherstadt, die Elbphilharmonie und ein einzigartiges maritimes Flair.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- item 2 -->
-                <div class="flex flex-col items-center lg:flex-row-reverse gap-5">
-                    <!-- image -->
-                    <div class="about__item__2-img w-full lg:w-1/2">
+                <div class="destination-card spanien flex flex-col items-center lg:flex-row-reverse gap-5">
+                    <div class="w-full lg:w-1/2">
                         <img src="/images/barcelona.jpg" alt="Barcelona" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
                     </div>
-
-                    <!-- content -->
-                    <div class="about__item__2-content w-full lg:w-1/2">
+                    <div class="w-full lg:w-1/2">
                         <div class="space-y-5">
-                            <h3>
-                                <span class="text-yellow-500">Barcelona</span> <br>
-                                Beste Reisezeit: Frühling und Herbst                      
-                            </h3>
-                            <p class="text-slate-300">
-                                Barcelona verzaubert mit Gaudís Architektur, traumhaften Stränden und einer pulsierenden Atmosphäre.
-                            </p>
+                            <h3><span class="text-yellow-500">Barcelona</span><br>Beste Reisezeit: Frühling und Herbst</h3>
+                            <p class="text-slate-300">Barcelona verzaubert mit Gaudís Architektur, traumhaften Stränden und einer pulsierenden Atmosphäre.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- item 3 -->
-                <div class="flex flex-col items-center lg:flex-row gap-5">
-                    <!-- image -->
-                    <div class="about__item__1-img w-full lg:w-1/2">
+                <div class="destination-card spanien flex flex-col items-center lg:flex-row gap-5">
+                    <div class="w-full lg:w-1/2">
                         <img src="/images/grancanaria.jpg" alt="Gran Canaria" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
                     </div>
-
-                    <!-- content -->
-                    <div class="about__item__1-content w-full lg:w-1/2">
+                    <div class="w-full lg:w-1/2">
                         <div class="space-y-5">
-                            <h3>
-                                <span class="text-yellow-500">Gran Canaria</span>  <br>
-                                Beste Reisezeit: Ganzjährig                             
-                            </h3>
-                            <p class="text-slate-300">
-                                Die Insel bietet beeindruckende Dünnenlandschaften, traumhafte Strände und eine angenehme Temperatur über das ganze Jahr über.
-                            </p>
+                            <h3><span class="text-yellow-500">Gran Canaria</span><br>Beste Reisezeit: Ganzjährig</h3>
+                            <p class="text-slate-300">Die Insel bietet beeindruckende Dünnenlandschaften, traumhafte Strände und eine angenehme Temperatur über das ganze Jahr über.</p>
                         </div>
                     </div>
                 </div>
 
-
                 <!-- item 4 -->
-                <div class="flex flex-col items-center lg:flex-row-reverse gap-5">
-                    <!-- image -->
-                    <div class="about__item__2-img w-full lg:w-1/2">
+                <div class="destination-card italien flex flex-col items-center lg:flex-row-reverse gap-5">
+                    <div class="w-full lg:w-1/2">
                         <img src="/images/venedig.jpg" alt="Venedig" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
                     </div>
-
-                    <!-- content -->
-                    <div class="about__item__2-content w-full lg:w-1/2">
+                    <div class="w-full lg:w-1/2">
                         <div class="space-y-5">
-                            <h3>
-                                <span class="text-yellow-500">Venedig</span> <br>
-                                Beste Reisezeit: Frühling und Herbst                      
-                            </h3>
-                            <p class="text-slate-300">
-                                Die Stadt der Kanäle fasziniert mit ihrer historischen Architektur, romantischen Gondelfahrten und malerischen Gassen.
-                            </p>
+                            <h3><span class="text-yellow-500">Venedig</span><br>Beste Reisezeit: Frühling und Herbst</h3>
+                            <p class="text-slate-300">Die Stadt der Kanäle fasziniert mit ihrer historischen Architektur, romantischen Gondelfahrten und malerischen Gassen.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- item 5 -->
-                <div class="flex flex-col items-center lg:flex-row gap-5">
-                    <!-- image -->
-                    <div class="about__item__1-img w-full lg:w-1/2">
+                <div class="destination-card italien flex flex-col items-center lg:flex-row gap-5">
+                    <div class="w-full lg:w-1/2">
                         <img src="/images/dolomiten.jpg" alt="Dolomiten" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
                     </div>
-
-                    <!-- content -->
-                    <div class="about__item__1-content w-full lg:w-1/2">
+                    <div class="w-full lg:w-1/2">
                         <div class="space-y-5">
-                            <h3>
-                                <span class="text-yellow-500">Dolomiten</span>  <br>
-                                Beste Reisezeit: Sommer und Winter                             
-                            </h3>
-                            <p class="text-slate-300">
-                                Ein Paradies für Wanderer und Wintersportler, mit atemberaubenden Bergpanoramen und charmanten Almhütten.
-                            </p>
+                            <h3><span class="text-yellow-500">Dolomiten</span><br>Beste Reisezeit: Sommer und Winter</h3>
+                            <p class="text-slate-300">Ein Paradies für Wanderer und Wintersportler, mit atemberaubenden Bergpanoramen und charmanten Almhütten.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- item 6 -->
-                <div class="flex flex-col items-center lg:flex-row-reverse gap-5">
-                    <!-- image -->
-                    <div class="about__item__2-img w-full lg:w-1/2">
+                <div class="destination-card amerika flex flex-col items-center lg:flex-row-reverse gap-5">
+                    <div class="w-full lg:w-1/2">
                         <img src="/images/lasvegas.jpg" alt="Las Vegas" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
                     </div>
-
-                    <!-- content -->
-                    <div class="about__item__2-content w-full lg:w-1/2">
+                    <div class="w-full lg:w-1/2">
                         <div class="space-y-5">
-                            <h3>
-                                <span class="text-yellow-500">Las Vegas</span> <br>
-                                Beste Reisezeit: Frühling und Herbst                      
-                            </h3>
-                            <p class="text-slate-300">
-                                Die schillernde Casinostadt bietet spektakuläre Shows, beeindruckende Hotels und ein pulsierendes Nachtleben.
-                            </p>
+                            <h3><span class="text-yellow-500">Las Vegas</span><br>Beste Reisezeit: Frühling und Herbst</h3>
+                            <p class="text-slate-300">Die schillernde Casinostadt bietet spektakuläre Shows, beeindruckende Hotels und ein pulsierendes Nachtleben.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- item 7 -->
-                <div class="flex flex-col items-center lg:flex-row gap-5">
-                    <!-- image -->
-                    <div class="about__item__1-img w-full lg:w-1/2">
+                <div class="destination-card amerika flex flex-col items-center lg:flex-row gap-5">
+                    <div class="w-full lg:w-1/2">
                         <img src="/images/losangeles.jpg" alt="Los Angeles" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
                     </div>
-
-                    <!-- content -->
-                    <div class="about__item__1-content w-full lg:w-1/2">
+                    <div class="w-full lg:w-1/2">
                         <div class="space-y-5">
-                            <h3>
-                                <span class="text-yellow-500">Los Angeles</span>  <br>
-                                Beste Reisezeit: Frühling bis Herbst                             
-                            </h3>
-                            <p class="text-slate-300">
-                                Die Stadt der Stars lockt mit Hollywood, traumhaften Stränden und einer lebendigen Kulturszene.
-                            </p>
+                            <h3><span class="text-yellow-500">Los Angeles</span><br>Beste Reisezeit: Frühling bis Herbst</h3>
+                            <p class="text-slate-300">Die Stadt der Stars lockt mit Hollywood, traumhaften Stränden und einer lebendigen Kulturszene.</p>
                         </div>
                     </div>
                 </div>
